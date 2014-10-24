@@ -43,6 +43,16 @@
             
                 <li><a href="../classes/DoublyLinkedList.html">DoublyLinkedList</a></li>
             
+                <li><a href="../classes/Heap.html">Heap</a></li>
+            
+                <li><a href="../classes/MaxHeap.html">MaxHeap</a></li>
+            
+                <li><a href="../classes/MinHeap.html">MinHeap</a></li>
+            
+                <li><a href="../classes/PriorityQueue.html">PriorityQueue</a></li>
+            
+                <li><a href="../classes/Queue.html">Queue</a></li>
+            
                 <li><a href="../classes/Stack.html">Stack</a></li>
             
             </ul>
@@ -93,12 +103,16 @@ import DoublyLinkedList = require(&#x27;./DoublyLinkedList&#x27;);
 
 /**
  * The Queue class provides the main functionality of a queue implemented using a doubly linked list.
+ *
+ * @class Queue
+ * @extends DoublyLinkedList
  */
 class Queue extends DoublyLinkedList {
 
     /**
      * Adds an element to the queue
      *
+     * @method enqueue
      * @param value The value to enqueue.
      * @return void
      */
@@ -108,6 +122,8 @@ class Queue extends DoublyLinkedList {
 
     /**
      * Dequeues a node from the queue
+     *
+     * @method dequeue
      * @return any  The value of the dequeued node.
      */
     public dequeue() {
