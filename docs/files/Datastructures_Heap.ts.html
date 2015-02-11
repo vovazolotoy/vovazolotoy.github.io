@@ -17,7 +17,7 @@
                 <h1><img src="https://vovazolotoy.github.io/docs/libstl.png" title="libstl"></h1>
         </div>
         <div class="yui3-u-1-4 version">
-            <em>API Docs for: 0.1.9</em>
+            <em>API Docs for: 0.1.13</em>
         </div>
     </div>
     <div id="bd" class="yui3-g">
@@ -205,7 +205,7 @@
                                         // there is 2 children and one of them must be swapped
                                         // get correct element to sift down
                                         var sift = left;
-                                        if ((this._tree[left] - this._tree[right]) * this._type &lt; 0) {
+                                        if (this.compare(this._tree[left], this._tree[right]) * this._type &lt; 0) {
                                             sift = right;
                                         }
                                         this._swap(i, sift);
@@ -335,15 +335,6 @@
                              */
                             public valid():boolean {
                                 return false;
-                            }
-                        
-                            /**
-                             * Recover from the corrupted state and allow further actions on the heap.
-                             *
-                             * @method recoverFromCorruption
-                             * @return void
-                             */
-                            public recoverFromCorruption():void {
                             }
                         
                             /**
