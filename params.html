@@ -25,8 +25,7 @@ var QueryString = function () {
   } 
     return query_string;
 }();
-
-console.log(QueryString);
+document.getElementById("code").value = QueryString.code;
 </script>
 <body>
 <pre>
@@ -37,5 +36,8 @@ console.log(QueryString);
       |_| |_|\___|_|_|\___/     \_/\_/ \___/|_|  |_|\__,_|
 
 </pre>
+<h3>
+    Code: <input type="text" id="code" value="" />
+</h3>
 </body>
 </html>
